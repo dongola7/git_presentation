@@ -20,7 +20,14 @@
 
 # Clone an svn branch #
 
-    $ git svn clone http://svn/x/branches/5.32 x-5.32
+    $ git svn clone http://svn/git-svn/trunk git_repo
+    Initialized empty Git repository in git_repo/.git/
+    r1 = e1e2a18c6537614f2bebc5c0dfb4ac6f8c829a3b (git-svn)
+        A   file1.c
+        A   Makefile
+    r2 = 58e044c16678b0a8b92e4dbed8f0a69d48ba9ec1 (git-svn)
+    Checked out HEAD:
+      file:///Users/blair/git-svn/SVNROOT/trunk r2
 
 !SLIDE bullets incremental
 
@@ -94,6 +101,10 @@
 # git svn rebase #
 
     $ git svn rebase
+        M   Makefile
+    r3 = ae409c2f5fe0831f22d6dc891652b5f9159f35de (git-svn)
+    First, rewinding head to replay your work on top of it...
+    Applying: Local git commit.
 
 !SLIDE bullets incremental
 
@@ -109,3 +120,10 @@
 # git svn dcommit #
 
     $ git svn dcommit
+    Committing to http://svn/git-svn/trunk ...
+        M   file1.c
+    Committed r4
+        M   file1.c
+    r4 = 31a4b40b05e1b42f34dd22c34936f43dd5be90ec (git-svn)
+    No changes between current HEAD and refs/remotes/git-svn
+    Resetting to the latest refs/remotes/git-svn
