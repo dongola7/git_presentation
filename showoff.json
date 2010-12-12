@@ -3,6 +3,7 @@
     "description": "A brief lesson on how to use git as a frontend to svn",
     "sections": [
         {"section":"intro"},
-        {"section":"basic"}
+        {"section":"basic"},
+        {"section":"advanced"}
     ]
 }
